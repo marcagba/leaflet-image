@@ -24,10 +24,10 @@
     "url": "https://github.com/mapbox/leaflet-image/issues"
   },
   "devDependencies": {
-    "browserify": "~13.0.1",
-    "concat-stream": "1.5.1",
+    "browserify": "^16.2.3",
+    "concat-stream": "^2.0.0",
     "eslint": "2.10.2",
-    "pageres": "4.1.2",
+    "pageres": "^5.1.0",
     "pixelmatch": "4.0.1",
     "tape": "4.5.1"
   },
