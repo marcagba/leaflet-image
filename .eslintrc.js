@@ -5,8 +5,8 @@ module.exports = {
     },
     "extends": "eslint:recommended",
     "parserOptions": {
-        "ecmaVersion": 7,
-        "sourceType": "module",
+        "ecmaVersion": 2019,
+        "sourceType": "module"
     },
     "rules": {
         "indent": [
@@ -23,7 +23,7 @@ module.exports = {
         ],
         "semi": [
             "error",
-            "always"
+            "never"
         ]
     }
 };
