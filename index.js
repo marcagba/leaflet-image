@@ -5,7 +5,7 @@ var queue = require('d3-queue').queue;
 var cacheBusterDate = +new Date();
 
 // leaflet-image
-module.exports = function leafletImage(map, callback) {
+export default function leafletImage(map, callback) {
 
     var hasMapbox = !!L.mapbox;
 
@@ -263,4 +263,4 @@ module.exports = function leafletImage(map, callback) {
         return !!url.match(dataURLRegex);
     }
 
-};
+}
