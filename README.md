@@ -29,7 +29,7 @@ __For Leaflet >= 1.0.0__: You must set `renderer: L.canvas()` for any layer that
 
 ### Usage
 
-browserify
+webpack
 
     npm install --save leaflet-image
 
@@ -41,7 +41,7 @@ web
 
 ```js
 var map = L.mapbox.map('map', 'YOUR.MAPID').setView([38.9, -77.03], 14);
-leafletImage(map, function(err, canvas) {
+leafletImage(map).then(function(canvas) {
     // now you have canvas
     // example thing to do with that canvas:
     var img = document.createElement('img');
@@ -65,10 +65,10 @@ leaflet-image is [available through the Mapbox Plugin CDN](https://www.mapbox.co
 ### API
 
 ```js
-leafletImage(map, callback)
+leafletImage(map).then(callback)
 ```
 
-map is a `L.map` or `L.mapbox.map`, callback takes `(err, canvas)`.
+map is a `L.map` or `L.mapbox.map`, callback takes `(canvas)`.
 
 ## Attribution
 
