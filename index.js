@@ -312,6 +312,7 @@ export default async function leafletImage(map) {
     // layerQueue.awaitAll(layersDone)
     processedLayers.forEach(layer => {
         if (layer && layer.canvas) {
+            /* XXX: Which is the lightest: canvas or image ? To be known */
             ctx.drawImage(layer.canvas, 0, 0)
         }
     })
